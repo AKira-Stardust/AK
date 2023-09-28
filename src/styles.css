@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply mb-14 ml-11 mr-11 bg-cardBg5 rounded shadow-md;
+}
+
+  .nav_hover{
+    @apply hover:text-xl hover:font-bold hover:text-navHoverBrown transition;
+  }
+  /* ease-out duration-1000 */
+  
+  .nav_head_hover{
+    @apply hover:text-navHoverBrown  transition ease-out duration-500;
+  }
+
+  .footer_hover{
+    @apply  hover:text-navHoverBrown  transition ease-out duration-300;
+  }
+
+  .portfolio_hover{
+    @apply  hover:text-navHoverBrown transition ease-out duration-300;
+  }  
+
+  .card_wrapper{
+    @apply grid sm:grid-cols-2 md:grid-cols-3 place-items-center p-4;
+  }
+  
+  .card_item_image{
+    @apply sm:col-span-1 md:col-span-1 p-2 align-middle;
+  }
+
+  .card_item_content{
+    @apply sm:col-span-1 md:col-span-2 border-b-2 border-headerBg;
+  }
+
+  .card_item_image_title{
+    @apply block font-bold p-3 text-center; 
+  }
+
+  /* * { 
+    outline: 1px red solid !important; 
+    visibility: visible !important; 
+  }  */
+
+  
+.carousel-open:checked+.carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* position: absolute; */
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1).carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2).carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3).carousel-bullet {
+  color: #2b6cb0;
+  /*Set to match the Tailwind colour you want the active one to be */
+}  

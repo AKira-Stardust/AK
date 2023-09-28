@@ -1,0 +1,20 @@
+{
+  "name": "ak_cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js -e ejs,js,css",
+    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "AK",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13",
+    "tailwindcss": "^2.2.16"
+  }
+}
