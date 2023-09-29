@@ -16,6 +16,7 @@ module.exports = {
         cardBg4:"#F0E5CF",
         cardBg5:"#F7F6F2",
         cardTxt:"white",
+        cardTxt2:"black",
         hoverTxt1:"#DBD0C0",
         hoverTxt2:"#D9CAB3",
         hoverTxt3:"#F5C6A5",

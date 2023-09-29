@@ -9,6 +9,10 @@
     @apply mb-14 ml-11 mr-11 bg-cardBg5 rounded shadow-md;
 }
 
+#portfolio .card {
+  @apply mb-14 ml-11 mr-11 bg-cardBg5 text-cardTxt2 rounded shadow-md;
+}
+
   .nav_hover{
     @apply hover:text-xl hover:font-bold hover:text-navHoverBrown transition;
   }
