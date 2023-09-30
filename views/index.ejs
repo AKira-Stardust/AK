@@ -3,7 +3,7 @@
 <!-- Head -->
 <%-include('head.ejs'); -%>
 
-<body class="font-body overflow-x-hidden">
+<body class="font-body overflow-x-hidden" id="about-anchor">
     <div class="pt-20  bg-tokyo-cityscape" id="main_wrapper"> <!-- Content Wrapper BEGINS -->
         
         <!-- Section 1.1 Nav BEGINS BIG SCREEN -->
@@ -16,13 +16,13 @@
         <%-include('about.ejs') -%>
             
         <div class="text-center"> 
-            <span class="text-headerBg font-semibold">• • •</span>
+            <span id="skillset-anchor" class="text-headerBg font-semibold">• • •</span>
         </div>
 
         <!-- Section 2 Skillset BEGINS-->
         <%-include('skillset.ejs') -%>  
 
-        <div class="text-center"> 
+        <div class="text-center" id="portfolio-anchor"> 
             <span class="text-headerBg font-semibold">• • •</span>
         </div>
 
