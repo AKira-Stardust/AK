@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js -e ejs,js,css",
-    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "AK",
